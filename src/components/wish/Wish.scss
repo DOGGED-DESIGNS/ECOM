@@ -1,0 +1,27 @@
+.wish {
+  position: fixed;
+  top: 80px;
+  z-index: 2000;
+  right: 10px;
+  width: 400px;
+  @media (max-width: 430px) {
+    width: 300px;
+  }
+  background: whitesmoke;
+  &__over {
+    max-height: 300px;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
+  }
+  &__img {
+    width: 70px;
+    height: 100px;
+    & > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

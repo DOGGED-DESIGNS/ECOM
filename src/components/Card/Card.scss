@@ -1,0 +1,49 @@
+.cardz {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  &__grid1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @media (max-width: 680px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__grid2 {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    margin-top: 50px;
+    grid-gap: 40px;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    @media (max-width: 780px) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+    &--img {
+      height: 300px;
+      cursor: pointer;
+      width: 200px;
+      position: relative;
+      &:hover img:nth-child(1) {
+        z-index: 10;
+      }
+      & > img {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.chip {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+}

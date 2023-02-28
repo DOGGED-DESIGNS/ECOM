@@ -1,0 +1,20 @@
+.searchz {
+  @media (max-width: 319px) {
+    width: 250px;
+    flex-wrap: wrap;
+    & > button {
+      width: 100%;
+    }
+    & > .field {
+      width: 100%;
+    }
+  }
+}
+
+.listz {
+  width: 300px;
+
+  @media (max-width: 319px) {
+    width: 250px;
+  }
+}

@@ -1,0 +1,27 @@
+.hov {
+  position: relative;
+  &:hover:after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: purple;
+    top: -3px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+.navz {
+  display: block;
+  @media (max-width: 780px) {
+    display: none;
+  }
+}
+
+.smallnav {
+  display: none;
+  @media (max-width: 780px) {
+    display: block;
+  }
+}

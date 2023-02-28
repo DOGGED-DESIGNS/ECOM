@@ -1,0 +1,33 @@
+.footer {
+  margin-top: 50px;
+  &__grid1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @media (max-width: 780px) {
+      grid-template-columns: 1fr;
+    }
+
+    grid-gap: 20px;
+    justify-content: start;
+  }
+  &__grid2 {
+    &--img {
+      width: 150px;
+      height: 100px;
+      & > img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+    display: grid;
+
+    justify-content: start;
+    grid-template-columns: repeat(2, 1fr);
+    @media (max-width: 780px) {
+      grid-template-columns: 1fr;
+    }
+    margin-top: 30px;
+  }
+}
